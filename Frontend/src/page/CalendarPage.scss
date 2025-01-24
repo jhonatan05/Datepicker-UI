@@ -1,0 +1,40 @@
+.calendar-page {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  border: 1px solid;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+
+  &__date {
+    padding-top: 8px;
+  }
+  &__days {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: auto;
+    justify-items: center;
+    padding: 0px 28px 28px 28px;
+
+    & span {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+    & div {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+  }
+}
