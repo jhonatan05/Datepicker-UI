@@ -5,6 +5,7 @@ import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const CalendarPage = () => {
+  const days = 4
   return (
     <section className="calendar-page">
       <section className="calendar-page__date">
@@ -21,7 +22,7 @@ const CalendarPage = () => {
         <span>T</span>
         <span>F</span>
         <span>S</span>
-        <Calendar />
+        <Calendar days={days} />
       </section>
       <section className="calendar-page__calendar"></section>
     </section>
